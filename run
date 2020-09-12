@@ -1,0 +1,9 @@
+file="maze.cpp"
+
+if g++ $file -lncurses; then
+	echo -e "compile hoe geche\n\n"
+	./a.out
+else
+	echo header e ki dicche:
+	g++ $file 2>&1 | head
+fi
